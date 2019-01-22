@@ -1,3 +1,9 @@
-# W205_Final_Project
+## Analysis of Billboard Music Trends in Twitter using Spotify, AWS and Big Data
 
-Please refer to the final presentation pdf for more details on how to run the scripts. 
+## Project Details 
+
+Analyzed and visualized Spotify metadata along with Billboard music trends in Twitter using AWS, Hive, Spark, Apache Storm and Power BI, to analyze music listeners’ habits and sentiment in tweets.
+
+## Tools Used
+
+Hive, Spark, Apache Storm, Power BI, PostgreSQL, Python, AWS
