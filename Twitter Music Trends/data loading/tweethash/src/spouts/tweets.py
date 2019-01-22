@@ -22,13 +22,13 @@ from streamparse.spout import Spout
 
 twitter_credentials = {
 
-    "consumer_key"        :  "LmHsZjJZaIWjKrKSKDHdusB99",
+    "consumer_key"        :  "",
 
-    "consumer_secret"     :  "G4fNgo0fLLhFtm9uOk2twO0XAQVjMTjocgCgY7yPXl5N2KJrcl",
+    "consumer_secret"     :  "",
 
-    "access_token"        :  "3225709838-a2oXtV8MO4K7OBScOKtpsr3OoWZyw1EDjXMqVGx",
+    "access_token"        :  "",
 
-    "access_token_secret" :  "APVVWs4hTnDoyXfHSCoZZ63EixC9uG53edv5ph3AylDo0",
+    "access_token_secret" :  "",
 
 }
 
