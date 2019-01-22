@@ -1,0 +1,32 @@
+song_id,Song_name,Artist_name,Artist_id,album_id,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,duration_ms,Disc_Number,track_number
+6PtMkDF8pZU9IKnyeiAj3i,"Words I Never Said, Pt. 1",Ella Vos,2zmrsXMHxagFz6vI2cD7r6,['5m8p6d8kDFfNOOi4Wr7w44'],0.531,0.283,6,-7.607,1,0.0286,0.827,0.00466,0.182,0.0441,84.815,audio_features,107235,1,2
+3rOxgWzyypJIRFCDZHLFIS,No Dope On Sundays,CyHi The Prynce,18HVMQsV3tINaTyzT5UIjH,['79yQxmlPsMM41NH3AiVSNK'],0.489,0.732,5,-5.823,0,0.351,0.315,0,0.148,0.444,138.361,audio_features,382962,1,2
+3rOxgWzyypJIRFCDZHLFIS,No Dope On Sundays,Pusha T,0ONHkAv9pCAFxb0zJwDNTy,['79yQxmlPsMM41NH3AiVSNK'],0.489,0.732,5,-5.823,0,0.351,0.315,0,0.148,0.444,138.361,audio_features,382962,1,2
+6flhrkPIIqB0zU8j2T2yyc,shedontknowbutsheknows,Tove Lo,4NHQUGzhtTLFvgF5SZesLK,['6jggnLM3SdDnjQ3GWmIZ4L'],0.65,0.777,1,-6.106,0,0.247,0.267,0,0.301,0.396,112.955,audio_features,196835,1,3
+0k23rRi1B8ZHrKtzECGoyk,Sigo Extrañándote,J Balvin,1vyhD5VmyZ7KMfW5gqLgo5,['4cGc9Eeb3Gjff2Aq5ILLEf'],0.89,0.86,9,-4.267,1,0.245,0.188,7.54E-05,0.215,0.928,93.013,audio_features,201280,1,5
+1Gn6vE9SBv1tz26ZYBiWOI,Strange Days - Remastered,The Doors,22WZ7M8sxp5THdruNY3gXt,['6bGa4Ox4GI6WAdsLbrR0bw'],0.475,0.692,2,-10.533,0,0.0486,0.234,0.0263,0.0809,0.464,122.239,audio_features,190120,1,1
+3YCybd0ccym8IiZycodMf6,All We Can Do,Poo Bear,3JXpwnHbLvXxY99EuXqFPX,['4MiHnzWA3mlUj0PfsHecE6'],0.869,0.547,6,-6.626,0,0.0506,0.308,3.20E-05,0.14,0.669,139.984,audio_features,207784,1,1
+3YCybd0ccym8IiZycodMf6,All We Can Do,Juanes,0UWZUmn7sybxMCqrw9tGa7,['4MiHnzWA3mlUj0PfsHecE6'],0.869,0.547,6,-6.626,0,0.0506,0.308,3.20E-05,0.14,0.669,139.984,audio_features,207784,1,1
+3YQ96qkxiEwTLwgu2Izcmq,Kamikaze,WALK THE MOON,6DIS6PRrLS3wbnZsf7vYic,['4fe1YmssM6Ugs6UyA7OdGg'],0.575,0.694,1,-5.675,1,0.0709,0.0158,0,0.108,0.442,77.539,audio_features,196533,1,7
+4EsYkJjHKMejYLp54woB9c,Letterman,Wiz Khalifa,137W8MRPWKqSmrBGDBFSop,['7gGdhlPptWrRYPXZw3j8dS'],0.93,0.673,10,-7.314,0,0.0733,0.0112,0,0.138,0.219,134.984,audio_features,188563,1,2
+76ro3Y5aWGQgMMmCblq7yH,Warzone,Of Mice & Men,4tususHNaR68xdgLstlGBA,['5VxgBFJF9bIkp3lqCcyQch'],0.477,0.976,2,-4.337,1,0.0833,9.86E-05,0.0022,0.119,0.218,150.001,audio_features,193577,1,1
+3T6Pfd1uZZk7obBwwxDr8I,Stranded,Flight Facilities,1lc8mnyGrCLtPhCoWjRxjM,['3gicA27LhgeoVz9hHEeJOT'],0.55,0.57,11,-8.667,0,0.0495,0.489,0.00333,0.107,0.307,99.966,audio_features,350306,1,1
+3T6Pfd1uZZk7obBwwxDr8I,Stranded,Broods,5r5Va4lVQ1zjEfbJSrmCsS,['3gicA27LhgeoVz9hHEeJOT'],0.55,0.57,11,-8.667,0,0.0495,0.489,0.00333,0.107,0.307,99.966,audio_features,350306,1,1
+3T6Pfd1uZZk7obBwwxDr8I,Stranded,Reggie Watts,3ni9LX95aVQksOuoHFEbEx,['3gicA27LhgeoVz9hHEeJOT'],0.55,0.57,11,-8.667,0,0.0495,0.489,0.00333,0.107,0.307,99.966,audio_features,350306,1,1
+3T6Pfd1uZZk7obBwwxDr8I,Stranded,Saro,39kjdm4oUJo40vZgcetOGV,['3gicA27LhgeoVz9hHEeJOT'],0.55,0.57,11,-8.667,0,0.0495,0.489,0.00333,0.107,0.307,99.966,audio_features,350306,1,1
+0M9k4v7mWTqgto355wwS2v,Find The River,R.E.M.,4KWTAlx2RvbpseOGMEmROg,['3sDXivpN7CmCKbQRRsRzw8'],0.421,0.501,2,-7.197,1,0.0267,0.149,2.85E-05,0.0975,0.26,144.376,audio_features,232560,1,12
+0IcYIjsfFEOIY1GI4t7dLu,Like Gold,Vance Joy,10exVja0key0uqUkk6LJRT,['6yRUQ6BsMwy64HN85KDOol'],0.691,0.707,7,-6.771,1,0.0373,0.273,8.67E-06,0.118,0.479,110.026,audio_features,223883,1,1
+1gWgaCmXX9G5IxeyZPWooW,Boy,Willow,3rWZHrfrsPBxVy692yAIxF,['0YrdQQiUYjNmLPs0SI53qy'],0.595,0.502,2,-7.126,1,0.0272,0.594,0,0.545,0.616,110.068,audio_features,181234,1,1
+2HQerWGTwJfTtOlJ3OA2Yn,The First Noel,Pentatonix,26AHtbjWKiwYzsoGoUZq53,['082VlX7cBth0o8xqDGclNn'],0.143,0.301,9,-11.165,0,0.0334,0.562,1.63E-06,0.0734,0.276,91.092,audio_features,220053,1,14
+0EJB5kgqISPxX4J1wS15ne,The Next Time We Wed,The Fratellis,3M4ThdJR28z9eSMcQHAZ5G,['1t4jXQhOdhT742JcvlLx3F'],0.566,0.903,2,-4.118,1,0.0445,0.000813,0,0.194,0.639,116.949,audio_features,204530,1,1
+4dTFQU2LVSqy3OOFW2lnWV,Sugar Pie Honey Bunch,Kid Rock,7dOBabd5O4CvKrg4iriHTM,['519SZo5x38UD8Jg7AUXWWE'],0.741,0.602,7,-7.351,1,0.0245,0.0707,0.00272,0.269,0.563,116.024,audio_features,251649,1,9
+7rKCmo4SZhKubupJdsuM5S,Reckless Love,Cory Asbury,2gXmjQIxCO8lMnSncluZaU,['3d745uwfR4X2wk1E0wuaFS'],0.573,0.688,6,-7.303,1,0.0372,0.0312,0,0.0962,0.189,110.739,audio_features,331125,1,1
+6AKWOVOJ81OQfsgxZbJ6QN,Wash It All Away,Five Finger Death Punch,5t28BP42x2axFnqOOMg3CM,['5cCjmw6pGLHHKZ6zuOhg1Y'],0.485,0.987,4,-3.1,1,0.0738,2.08E-05,0,0.267,0.272,123.576,audio_features,224906,1,3
+7uWTX7EPpu9JnXMb6Zs3RO,Hasta El Ombligo,Chyno Miranda,1VrWc8r4AjrR8YfT0vlsc7,['2cOa4SS1rOzEGuHg5OBBwO'],0.715,0.856,6,-4.782,0,0.0741,0.0433,0,0.247,0.685,96.036,audio_features,232533,1,1
+7uWTX7EPpu9JnXMb6Zs3RO,Hasta El Ombligo,Zion & Lennox,21451j1KhjAiaYKflxBjr1,['2cOa4SS1rOzEGuHg5OBBwO'],0.715,0.856,6,-4.782,0,0.0741,0.0433,0,0.247,0.685,96.036,audio_features,232533,1,1
+6gQUbFwwdYXlKdmqRoWKJe,Dude (Looks Like A Lady),Aerosmith,7Ey4PD4MYsKc5I2dolUwbH,['3XYqOJI1YlX40kJTdzFEzp'],0.537,0.978,4,-2.921,0,0.0442,0.417,1.56E-05,0.0374,0.931,126.343,audio_features,265773,1,5
+49OyaDdgZYqNrzz5rvrFyI,I Feel It Coming - Recorded At Sound Stage Nashville,Jillian Jacqueline,5GDZ6xhBwk7Yja97CFLmV7,['0wx6mlaSSj1ckHaKRNTOJh'],0.627,0.397,5,-10.434,1,0.229,0.463,0,0.137,0.149,92.781,audio_features,243563,1,2
+4Jm9RwZ2C46J06ARRllUs5,Thor: Ragnarok,Mark Mothersbaugh,5sEDTHJJyDEWVFx99hGSIb,['4gecrZPdDxMlVxBtpobpxr'],0.267,0.71,9,-9.008,0,0.0416,0.0629,0.574,0.0948,0.16,75.411,audio_features,69573,1,3
+5B4QJOQOJ24qJVlGMtNREk,Saint Bass City Rockers,The Bloody Beetroots,0QJKELJZZuLAjqLOOixJm5,['5WdMuFT65WXigpOl3NNITH'],0.533,0.918,1,-2.861,0,0.0538,0.000583,0.456,0.0947,0.06,127.98,audio_features,316875,1,12
+5Yzt8HsNvqIaP9cNhrXzAa,That's All Right,Dori Freeman,4GCMwhffO4BBQZp2eoOapt,['3SarATvyjJUcQqLhnjLid4'],0.564,0.242,8,-9.119,1,0.0371,0.94,0.00281,0.11,0.289,78.28,audio_features,198160,1,9
+6T8UV2S5iIXLVesDWrUEVv,Body Talk,Majid Jordan,4HzKw8XcD0piJmDrrPRCYk,['7lW5oqhn9507jNoHIe2v4B'],0.789,0.507,6,-8.916,0,0.0754,0.199,0,0.0704,0.226,91.979,audio_features,207057,1,1

@@ -1,0 +1,316 @@
+                  artist_id                        name    follower  \
+0                      None                        None         NaN   
+1    1uNFoZAHBGtllmzznpCI3s               Justin Bieber  15473758.0   
+2    13y7CgLHjMVRMDqxdx0Xdo                  Gucci Mane   1489169.0   
+3    5rSXSAkZ67PYJSvpUpkOr7             Backstreet Boys   1114549.0   
+4    3wyVrVrFCkukjdVIdirGVY                    Lil Pump   1431881.0   
+5    6fOMl44jA4Sp5b9PpYCkzz                          NF    540582.0   
+6    3BmGtnKgCSGYIUhmivXKWX              Kelly Clarkson   2214917.0   
+7    718COspgdWOnwOFpJHRZHS                  Luke Combs    157163.0   
+8    20JZFwl6HVl6yg8a4H3ZqK         Panic! At The Disco   3183668.0   
+9    2ye2Wgw4gimLv2eAKyk1NB                   Metallica   4845874.0   
+10   26VFTg2z8YR0cCuwLzESi2                      Halsey   2368131.0   
+11   163tK9Wjr9P9DmM0AVK7lm                       Lorde   2706901.0   
+12   6ZjFtWeHP9XN7FeKSUe80S                 Bing Crosby    149062.0   
+13   1Mxqyy3pSjf8kZZL4QVxS0               Frank Sinatra   1898377.0   
+14   0YWxKQj2Go9CGHCp77UOyy                    Fabolous    536183.0   
+15   6cXMpsP9x0SH4kFfMyVezF                 Josh Groban    262797.0   
+16   1anyVhU62p31KFi8MEzkbf           Chance The Rapper   2255446.0   
+17   7wlFDEWiM5OoIAt8RSli8b  YoungBoy Never Broke Again    299427.0   
+18   0LyfQWJT6nXafLPZqxe9Of             Various Artists    320960.0   
+19   0LyfQWJT6nXafLPZqxe9Of             Various Artists    320960.0   
+20   6XyY86QOPPrYVGvF9ch6wz                 Linkin Park   6358924.0   
+21   3WrFJ7ztbogyGnTHbHJFl2                 The Beatles   5192226.0   
+22   0u2FHSq3ln94y5Q57xazwf                 Keith Urban   1562695.0   
+23   53XhwfbYqKCa1cC15pYq2q             Imagine Dragons   6536664.0   
+24   5ZS223C6JyBfXasXxrRqOk                  Jhene Aiko   1277962.0   
+25   1eEfMU2AhEo7XnKgL7c304                  Carpenters    333700.0   
+26   4NpFxQe2UvRCAjto3JqlSl             Greta Van Fleet     88608.0   
+27   5WUlDfRSoLAfcVSX1WnrxN                         Sia   5129393.0   
+28   4kI8Ie27vjvonwaB2ePh8T           Portugal. The Man    534147.0   
+29   4dpARuHxo51G3z768sgnrY                       Adele   7545765.0   
+..                      ...                         ...         ...   
+126  3JhNCzhSMTxs9WLGJJxWOY                  Macklemore    746220.0   
+127  0xOeVMOz2fVg5BJY3N6akT                 Jaden Smith    200922.0   
+128  3TVXtAsR1Inumwj472S9r4                       Drake  14510481.0   
+129  1ZwdS5xdxEREPySFridCfh                        2Pac   3275774.0   
+130  0du5cEVh5yTK9QJze8zA0C                  Bruno Mars   9131903.0   
+131  1uNFoZAHBGtllmzznpCI3s               Justin Bieber  15473773.0   
+132  5dr7fkIRO4K14g7U8SCue5                The Blasters     10576.0   
+133  3vbKDsSS70ZX9D2OcvbZmS                        Beck    680400.0   
+134  5K4W6rqBFWDnAN6FQUkS6x                  Kanye West   5984174.0   
+135  2wY79sveU1sp5g7SokKOiI                   Sam Smith   4334410.0   
+136  7dGJo4pcD2V6oG8kP0tJRR                      Eminem  12100059.0   
+137  246dkjvS1zLTtiykXe5h60                 Post Malone   2157030.0   
+138  4mxWe1mtYIYfP040G38yvS                Alan Jackson    638369.0   
+139  4YLtscXsxbVgi031ovDDdh             Chris Stapleton    543611.0   
+140  0LyfQWJT6nXafLPZqxe9Of             Various Artists    320960.0   
+141  1KCSPY1glIKqW2TotWuXOR                        P!nk   3196542.0   
+142  3e7awlrlDSwF3iM0WBjGMp                  Little Mix   3056799.0   
+143  6Xgp2XMz1fhVYe7i6yNAax                Trippie Redd    240274.0   
+144  4MoAOfV4ROWofLG3a3hhBN                   Jon Pardi    254619.0   
+145  06HL4z0CvFAxyc27GXpf02                Taylor Swift   8356650.0   
+146  2kucQ9jQwuD8jWdtR9Ef38                    Sam Hunt    898691.0   
+147  7EK1bQADBoqbYXnT4Cqv9w                 John Denver    272395.0   
+148  6I3M904Y9IwgDjrQ9pANiB                     Kenny G    245246.0   
+149  2ye2Wgw4gimLv2eAKyk1NB                   Metallica   4845879.0   
+150  1Xyo4u8uXC1ZmMpatF05PJ                  The Weeknd   8630658.0   
+151  1RyvyyTE3xzB2ZywiAwp0i                      Future   4942161.0   
+152  69GGBxA162lTqCwzJG5jLp            The Chainsmokers   4796616.0   
+153  32vWCbZh0xZ4o9gkz4PsEU                Dolly Parton    420042.0   
+154  21WS9wngs9AqFckK7yYJPM                    PnB Rock    758178.0   
+155  4xRYI6VqpkE3UwrDrAZL8L                       Logic   1828943.0   
+
+                                                 genre  \
+0                                                 None   
+1    [canadian pop, dance pop, pop, pop christmas, ...   
+2    [dirty south rap, dwn trap, pop rap, rap, sout...   
+3    [boy band, dance pop, europop, pop, pop christ...   
+4     [dwn trap, rap, trap music, underground hip hop]   
+5                                                   []   
+6    [dance pop, neo mellow, pop, pop christmas, po...   
+7        [contemporary country, country, country road]   
+8            [emo, modern rock, pop punk, vegas indie]   
+9    [alternative metal, alternative rock, hard roc...   
+10   [dance pop, etherpop, indie poptimism, pop, po...   
+11       [dance pop, metropopolis, pop, post-teen pop]   
+12   [adult standards, big band, cabaret, christmas...   
+13   [adult standards, christmas, easy listening, j...   
+14   [crunk, dance pop, dirty south rap, gangster r...   
+15   [adult standards, classify, operatic pop, pop ...   
+16                                      [pop rap, rap]   
+17       [dwn trap, rap, southern hip hop, trap music]   
+18                                                  []   
+19                                                  []   
+20   [alternative metal, nu metal, post-grunge, rap...   
+21   [british invasion, classic rock, merseybeat, p...   
+22   [australian country, contemporary country, cou...   
+23                     [modern rock, pop, vegas indie]   
+24   [dance pop, deep indie r&b, deep pop r&b, hip ...   
+25   [adult standards, brill building pop, christma...   
+26                                                  []   
+27                  [australian dance, dance pop, pop]   
+28   [indie pop, indie rock, indietronica, modern r...   
+29                     [dance pop, pop, post-teen pop]   
+..                                                 ...   
+126                                          [pop rap]   
+127                                                 []   
+128              [canadian pop, hip hop, pop rap, rap]   
+129  [g funk, gangster rap, hip hop, pop rap, rap, ...   
+130           [dance pop, pop, pop rap, post-teen pop]   
+131  [canadian pop, dance pop, pop, pop christmas, ...   
+132  [pub rock, rock-and-roll, rockabilly, roots ro...   
+133  [alternative rock, anti-folk, blues-rock, elec...   
+134                 [pop, pop christmas, pop rap, rap]   
+135                                   [dance pop, pop]   
+136   [detroit hip hop, g funk, hip hop, pop rap, rap]   
+137                                     [pop rap, rap]   
+138  [contemporary country, country, country christ...   
+139      [contemporary country, country, country road]   
+140                                                 []   
+141                    [dance pop, pop, post-teen pop]   
+142       [dance pop, pop, post-teen pop, talent show]   
+143                                                 []   
+144  [contemporary country, country, country road, ...   
+145     [dance pop, pop, pop christmas, post-teen pop]   
+146                             [contemporary country]   
+147  [adult standards, country christmas, folk, fol...   
+148                      [jazz christmas, smooth jazz]   
+149  [alternative metal, alternative rock, hard roc...   
+150                           [canadian pop, pop, rap]   
+151       [pop rap, rap, southern hip hop, trap music]   
+152                         [edm, pop, tropical house]   
+153  [country, country christmas, country dawn, tra...   
+154  [dwn trap, pop rap, rap, southern hip hop, tra...   
+155                                     [pop rap, rap]   
+
+                 spotify_id  \
+0                      None   
+1    1uNFoZAHBGtllmzznpCI3s   
+2    13y7CgLHjMVRMDqxdx0Xdo   
+3    5rSXSAkZ67PYJSvpUpkOr7   
+4    3wyVrVrFCkukjdVIdirGVY   
+5    6fOMl44jA4Sp5b9PpYCkzz   
+6    3BmGtnKgCSGYIUhmivXKWX   
+7    718COspgdWOnwOFpJHRZHS   
+8    20JZFwl6HVl6yg8a4H3ZqK   
+9    2ye2Wgw4gimLv2eAKyk1NB   
+10   26VFTg2z8YR0cCuwLzESi2   
+11   163tK9Wjr9P9DmM0AVK7lm   
+12   6ZjFtWeHP9XN7FeKSUe80S   
+13   1Mxqyy3pSjf8kZZL4QVxS0   
+14   0YWxKQj2Go9CGHCp77UOyy   
+15   6cXMpsP9x0SH4kFfMyVezF   
+16   1anyVhU62p31KFi8MEzkbf   
+17   7wlFDEWiM5OoIAt8RSli8b   
+18   0LyfQWJT6nXafLPZqxe9Of   
+19   0LyfQWJT6nXafLPZqxe9Of   
+20   6XyY86QOPPrYVGvF9ch6wz   
+21   3WrFJ7ztbogyGnTHbHJFl2   
+22   0u2FHSq3ln94y5Q57xazwf   
+23   53XhwfbYqKCa1cC15pYq2q   
+24   5ZS223C6JyBfXasXxrRqOk   
+25   1eEfMU2AhEo7XnKgL7c304   
+26   4NpFxQe2UvRCAjto3JqlSl   
+27   5WUlDfRSoLAfcVSX1WnrxN   
+28   4kI8Ie27vjvonwaB2ePh8T   
+29   4dpARuHxo51G3z768sgnrY   
+..                      ...   
+126  3JhNCzhSMTxs9WLGJJxWOY   
+127  0xOeVMOz2fVg5BJY3N6akT   
+128  3TVXtAsR1Inumwj472S9r4   
+129  1ZwdS5xdxEREPySFridCfh   
+130  0du5cEVh5yTK9QJze8zA0C   
+131  1uNFoZAHBGtllmzznpCI3s   
+132  5dr7fkIRO4K14g7U8SCue5   
+133  3vbKDsSS70ZX9D2OcvbZmS   
+134  5K4W6rqBFWDnAN6FQUkS6x   
+135  2wY79sveU1sp5g7SokKOiI   
+136  7dGJo4pcD2V6oG8kP0tJRR   
+137  246dkjvS1zLTtiykXe5h60   
+138  4mxWe1mtYIYfP040G38yvS   
+139  4YLtscXsxbVgi031ovDDdh   
+140  0LyfQWJT6nXafLPZqxe9Of   
+141  1KCSPY1glIKqW2TotWuXOR   
+142  3e7awlrlDSwF3iM0WBjGMp   
+143  6Xgp2XMz1fhVYe7i6yNAax   
+144  4MoAOfV4ROWofLG3a3hhBN   
+145  06HL4z0CvFAxyc27GXpf02   
+146  2kucQ9jQwuD8jWdtR9Ef38   
+147  7EK1bQADBoqbYXnT4Cqv9w   
+148  6I3M904Y9IwgDjrQ9pANiB   
+149  2ye2Wgw4gimLv2eAKyk1NB   
+150  1Xyo4u8uXC1ZmMpatF05PJ   
+151  1RyvyyTE3xzB2ZywiAwp0i   
+152  69GGBxA162lTqCwzJG5jLp   
+153  32vWCbZh0xZ4o9gkz4PsEU   
+154  21WS9wngs9AqFckK7yYJPM   
+155  4xRYI6VqpkE3UwrDrAZL8L   
+
+                                                 image  popularity  \
+0                                                 None         NaN   
+1    [{u'url': u'https://i.scdn.co/image/5c3cf2ee34...        96.0   
+2    [{u'url': u'https://i.scdn.co/image/e8eeadc550...        93.0   
+3    [{u'url': u'https://i.scdn.co/image/44b684507a...        80.0   
+4    [{u'url': u'https://i.scdn.co/image/5d7efd90ad...        91.0   
+5    [{u'url': u'https://i.scdn.co/image/1a1fb853d0...        89.0   
+6    [{u'url': u'https://i.scdn.co/image/0e874611a1...        84.0   
+7    [{u'url': u'https://i.scdn.co/image/f511c43d76...        77.0   
+8    [{u'url': u'https://i.scdn.co/image/13d0de938c...        85.0   
+9    [{u'url': u'https://i.scdn.co/image/5a06711d7f...        86.0   
+10   [{u'url': u'https://i.scdn.co/image/cdc0a00dd1...        90.0   
+11   [{u'url': u'https://i.scdn.co/image/d25fc756cd...        86.0   
+12   [{u'url': u'https://i.scdn.co/image/bce578f0f9...        85.0   
+13   [{u'url': u'https://i.scdn.co/image/fc4e0f474f...        87.0   
+14   [{u'url': u'https://i.scdn.co/image/6e1c2c7512...        77.0   
+15   [{u'url': u'https://i.scdn.co/image/8f9908fa0d...        73.0   
+16   [{u'url': u'https://i.scdn.co/image/f5aceffb43...        87.0   
+17   [{u'url': u'https://i.scdn.co/image/70f331108f...        81.0   
+18                                                  []         0.0   
+19                                                  []         0.0   
+20   [{u'url': u'https://i.scdn.co/image/1685533969...        90.0   
+21   [{u'url': u'https://i.scdn.co/image/197cff8076...        89.0   
+22   [{u'url': u'https://i.scdn.co/image/c52bf07a01...        78.0   
+23   [{u'url': u'https://i.scdn.co/image/de3c2c4f4e...        93.0   
+24   [{u'url': u'https://i.scdn.co/image/ec0acd56a9...        84.0   
+25   [{u'url': u'https://i.scdn.co/image/ed45f57533...        76.0   
+26   [{u'url': u'https://i.scdn.co/image/26953695e4...        67.0   
+27   [{u'url': u'https://i.scdn.co/image/0520ee7557...        93.0   
+28   [{u'url': u'https://i.scdn.co/image/14986410ca...        85.0   
+29   [{u'url': u'https://i.scdn.co/image/ccbe7b4fef...        87.0   
+..                                                 ...         ...   
+126  [{u'url': u'https://i.scdn.co/image/548c808ed4...        87.0   
+127  [{u'url': u'https://i.scdn.co/image/9a2ebadd16...        82.0   
+128  [{u'url': u'https://i.scdn.co/image/cb080366dc...        98.0   
+129  [{u'url': u'https://i.scdn.co/image/fdb2382075...        83.0   
+130  [{u'url': u'https://i.scdn.co/image/aa32d6d4ca...        92.0   
+131  [{u'url': u'https://i.scdn.co/image/5c3cf2ee34...        96.0   
+132  [{u'url': u'https://i.scdn.co/image/10bd9f90a2...        45.0   
+133  [{u'url': u'https://i.scdn.co/image/0f9a6de963...        75.0   
+134  [{u'url': u'https://i.scdn.co/image/a57e5f1919...        92.0   
+135  [{u'url': u'https://i.scdn.co/image/6318ebb61a...        96.0   
+136  [{u'url': u'https://i.scdn.co/image/6c3ecb13aa...        95.0   
+137  [{u'url': u'https://i.scdn.co/image/3fc1d32020...        99.0   
+138  [{u'url': u'https://i.scdn.co/image/42c9789b6b...        75.0   
+139  [{u'url': u'https://i.scdn.co/image/e11519e9cd...        80.0   
+140                                                 []         0.0   
+141  [{u'url': u'https://i.scdn.co/image/afc2d276d9...        89.0   
+142  [{u'url': u'https://i.scdn.co/image/aa8c3147f9...        87.0   
+143  [{u'url': u'https://i.scdn.co/image/03a50162b3...        85.0   
+144  [{u'url': u'https://i.scdn.co/image/3d4f9f694c...        76.0   
+145  [{u'url': u'https://i.scdn.co/image/bdaeccb035...        95.0   
+146  [{u'url': u'https://i.scdn.co/image/9274931306...        80.0   
+147  [{u'url': u'https://i.scdn.co/image/008be1fdf0...        74.0   
+148  [{u'url': u'https://i.scdn.co/image/0b4efeba9b...        70.0   
+149  [{u'url': u'https://i.scdn.co/image/5a06711d7f...        86.0   
+150  [{u'url': u'https://i.scdn.co/image/a1bbafd8c2...        94.0   
+151  [{u'url': u'https://i.scdn.co/image/5edf0373e8...        95.0   
+152  [{u'url': u'https://i.scdn.co/image/6735a98c7c...        90.0   
+153  [{u'url': u'https://i.scdn.co/image/fe6a6334ee...        73.0   
+154  [{u'url': u'https://i.scdn.co/image/a560bd71cd...        86.0   
+155  [{u'url': u'https://i.scdn.co/image/9aab47129b...        90.0   
+
+                                        related_artist  
+0                                                 None  
+1    [[Cody Simpson], [One Direction], [Nick Jonas]...  
+2    [[Waka Flocka Flame], [Yo Gotti], [2 Chainz], ...  
+3    [[*NSYNC], [O-Town], [Five], [Westlife], [Sava...  
+4    [[Smokepurpp], [Ugly God], [Jay Critch], [SahB...  
+5    [[KB], [Nate Feuerstein], [Nathan Feuerstein],...  
+6    [[Hilary Duff], [Jordin Sparks], [Ashlee Simps...  
+7    [[Chase Rice], [Dylan Schneider], [Seth Ennis]...  
+8    [[Fall Out Boy], [All Time Low], [My Chemical ...  
+9    [[Megadeth], [Slayer], [Pantera], [Anthrax], [...  
+10   [[Kesha], [Rachel Platten], [JoJo], [Taylor Sw...  
+11   [[Halsey], [M?], [Broods], [HAIM], [Tove Lo], ...  
+12   [[Perry Como], [Dinah Shore], [Jimmy Durante],...  
+13   [[Dean Martin], [Ella Fitzgerald], [Bobby Dari...  
+14   [[Beanie Sigel], [Lloyd Banks], [Juelz Santana...  
+15   [[Katherine Jenkins], [Jackie Evancho], [Il Di...  
+16   [[Vic Mensa], [Ab-Soul], [Isaiah Rashad], [Mic...  
+17   [[YFN Lucci], [Blac Youngsta], [Jay Critch], [...  
+18                                                  []  
+19                                                  []  
+20   [[Papa Roach], [Limp Bizkit], [Breaking Benjam...  
+21   [[George Harrison], [John Lennon], [Paul McCar...  
+22   [[Little Big Town], [Dierks Bentley], [Rascal ...  
+23   [[WALK THE MOON], [fun.], [OneRepublic], [Amer...  
+24   [[Kehlani], [Mila J], [Teyana Taylor], [Sevyn ...  
+25   [[Barry Manilow], [Captain & Tennille], [Bread...  
+26   [[Citizen Zero], [Highly Suspect], [grandson],...  
+27   [[Ellie Goulding], [Lady Gaga], [Florence + Th...  
+28   [[Cold War Kids], [Local Natives], [Minus The ...  
+29   [[Leona Lewis], [Jessie J], [Emeli Sand?], [El...  
+..                                                 ...  
+126  [[Macklemore & Ryan Lewis], [Hoodie Allen], [C...  
+127  [[Kevin Abstract], [Domo Genesis], [Amin?], [V...  
+128  [[J. Cole], [Big Sean], [Jeremih], [Wale], [Br...  
+129  [[Makaveli], [Eazy-E], [The Notorious B.I.G.],...  
+130  [[Charlie Puth], [Ne-Yo], [Justin Timberlake],...  
+131  [[Cody Simpson], [One Direction], [Nick Jonas]...  
+132  [[The Beat Farmers], [Dave Alvin], [Robert Gor...  
+133  [[The Flaming Lips], [Pavement], [Yo La Tengo]...  
+134  [[Lupe Fiasco], [Pusha T], [Kid Cudi], [JAY Z]...  
+135  [[James Arthur], [Jess Glynne], [Ella Henderso...  
+136  [[D12], [Bad Meets Evil], [Dr. Dre], [50 Cent]...  
+137  [[Desiigner], [NAV], [Lil Yachty], [Travis Sco...  
+138  [[Brooks & Dunn], [Travis Tritt], [Joe Diffie]...  
+139  [[Sturgill Simpson], [Tyler Childers], [Brothe...  
+140                                                 []  
+141  [[Christina Aguilera], [Gwen Stefani], [Kelly ...  
+142  [[Cher Lloyd], [The Saturdays], [Olly Murs], [...  
+143  [[Lil Tracy], [6LACK], [D Savage], [MadeinTYO]...  
+144  [[Frankie Ballard], [Cole Swindell], [Thomas R...  
+145  [[Meghan Trainor], [Selena Gomez], [Miley Cyru...  
+146  [[Cole Swindell], [Thomas Rhett], [Kelsea Ball...  
+147  [[Gordon Lightfoot], [Jim Croce], [Don McLean]...  
+148  [[Peter White], [Dave Koz], [Boney James], [Ea...  
+149  [[Megadeth], [Slayer], [Pantera], [Anthrax], [...  
+150  [[Frank Ocean], [Jhene Aiko], [A$AP Rocky], [M...  
+151  [[2 Chainz], [Young Thug], [Yo Gotti], [Desiig...  
+152  [[Cheat Codes], [Zedd], [DVBBS], [Alesso], [Sy...  
+153  [[Reba McEntire], [Loretta Lynn], [Tammy Wynet...  
+154  [[A Boogie Wit da Hoodie], [Zoey Dollaz], [Mad...  
+155  [[Skizzy Mars], [Mike Stud], [Vic Mensa], [Mac...  
+
+[156 rows x 8 columns]
