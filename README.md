@@ -1,3 +1,3 @@
 ## Repo Details
 
-Repository for Projects done during UC Berkeley MIDS program.
+Repository for projects done during UC Berkeley MIDS program.
