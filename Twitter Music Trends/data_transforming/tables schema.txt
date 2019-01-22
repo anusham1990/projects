@@ -1,0 +1,718 @@
+for tweets : tweets_new, tweets_new_10,  tweets_hash   
+
+for parsed tweets: tweets_hash_parse_two, tweets_new_parse_two 
+
+for sentiment: sentiment_hash_all , sentiment_hash_removed ,sentiment_new_all  ,sentiment_new_removed 
+
+for billboard and channel (as filter):  billboard_top_100_artist, billboard_top_100_song ,
+
+                                        billboard_top_100_song_detail, billboard_top_200_album ,
+
+                                        billboard_top_200_album_artist_detail, tweet_stream_channel_filter 
+
+for temp use, parsing only, will delete soon: tweets_hash_sub ,
+
+                                              tweets_new_sub ,tweets_new_parse , tweets_hash_parse  ,
+
+                                              tweets_hash_sub, tweet_new_10_sub 
+
+for spotify music (no longer in use will delete soon): album_details,artist_detail ,
+
+                                                       artist_top_song_detail ,new_release ,
+
+                                                       new_release_song_detail
+
+
+***** additional notes on sentiment data *****
+
+sentiment_new_all table contains sentiment_new_removed table. sentiment_new_removed table contains all the tweets that has song_name (if there is one) removed, and then sentiment analysis is applied, whereas sentiment_new_all contains sentiment score for all tweets from tweets_new table and tweets_new_10 table
+
+
+
+the same goes for sentiment_hash_all and sentiment_hash_removed
+
+
+
+
+
+           Table "public.billboard_top_100_artist"  (table that contains Billboard top 100 artists and their related info from Spotify)
+
+     Column     |  Type  | Modifiers | Storage  | Description
+
+----------------+--------+-----------+----------+-------------
+
+ artist_id      | text   |           | extended |
+
+ name           | text   |           | extended |
+
+ follower       | bigint |           | plain    |
+
+ genre          | text   |           | extended |
+
+ spotify_id     | text   |           | extended |
+
+ popularity     | bigint |           | plain    |
+
+ related_artist | text   |           | extended |
+
+ chart_date     | text   |           | extended |
+
+ rank           | bigint |           | plain    |
+
+Has OIDs: no
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+         Table "public.billboard_top_100_song" (table that contains Billboard top 100 hot songs, artist names and chart date)
+
+   Column   | Type | Modifiers | Storage  | Description
+
+------------+------+-----------+----------+-------------
+
+ song_name  | text |           | extended |
+
+ artists    | text |           | extended |
+
+ chart_date | text |           | extended |
+
+Has OIDs: no
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+               Table "public.billboard_top_100_song_detail"  (table that contains Billboard top 100 hot songs' details )
+
+      Column      |       Type       | Modifiers | Storage  | Description
+
+------------------+------------------+-----------+----------+-------------
+
+ song_id          | text             |           | extended |
+
+ song_name        | text             |           | extended |
+
+ artist_name      | text             |           | extended |
+
+ artist_id        | text             |           | extended |
+
+ album_id         | text             |           | extended |
+
+ danceability     | double precision |           | plain    |
+
+ energy           | double precision |           | plain    |
+
+ key              | bigint           |           | plain    |
+
+ loudness         | double precision |           | plain    |
+
+ mode             | bigint           |           | plain    |
+
+ speechiness      | double precision |           | plain    |
+
+ acousticness     | double precision |           | plain    |
+
+ instrumentalness | double precision |           | plain    |
+
+ liveness         | double precision |           | plain    |
+
+ valence          | double precision |           | plain    |
+
+ tempo            | double precision |           | plain    |
+
+ type             | text             |           | extended |
+
+ duration_ms      | bigint           |           | plain    |
+
+ disc_number      | bigint           |           | plain    |
+
+ track_number     | bigint           |           | plain    |
+
+Has OIDs: no
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
+
+           Table "public.billboard_top_200_album"  (table that contains Billboard top 200 albums and related info )
+
+    Column    |  Type  | Modifiers | Storage  | Description
+
+--------------+--------+-----------+----------+-------------
+
+ album        | text   |           | extended |
+
+ artist       | text   |           | extended |
+
+ album_id     | text   |           | extended |
+
+ artist_id    | text   |           | extended |
+
+ market       | text   |           | extended |
+
+ genres       | text   |           | extended |
+
+ popularity   | bigint |           | plain    |
+
+ release_date | text   |           | extended |
+
+ chart_date   | text   |           | extended |
+
+ rank         | bigint |           | plain    |
+
+Has OIDs: no
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+          Table "public.billboard_top_200_album_artist_detail"  (table that contains Billboard top 200 albums' artists' info)
+
+     Column     |       Type       | Modifiers | Storage  | Description
+
+----------------+------------------+-----------+----------+-------------
+
+ artist_id      | text             |           | extended |
+
+ name           | text             |           | extended |
+
+ follower       | double precision |           | plain    |
+
+ genre          | text             |           | extended |
+
+ spotify_id     | text             |           | extended |
+
+ image          | text             |           | extended |
+
+ popularity     | double precision |           | plain    |
+
+ related_artist | text             |           | extended |
+
+Has OIDs: no
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+              Table "public.tweet_stream_channel_filter"  (table that contains Channel filters being used for tweets streaming )
+
+    Column    |       Type        | Modifiers | Storage  | Description
+
+--------------+-------------------+-----------+----------+-------------
+
+ channel_name | character varying |           | extended |
+
+Has OIDs: no
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+                             Table "public.tweets_new"   (table that contains tweets data with specific filter condition)
+
+         Column         |  Type   |       Modifiers       | Storage  | Description
+
+------------------------+---------+-----------------------+----------+-------------
+
+ created_at             | text    |                       | extended |
+
+ tweet_id               | text    | not null              | extended |
+
+ tweet_text             | text    |                       | extended |
+
+ source                 | text    |                       | extended |
+
+ quote_count            | integer |                       | plain    |
+
+ reply_count            | integer |                       | plain    |
+
+ retweet_count          | integer |                       | plain    |
+
+ favorite_count         | integer |                       | plain    |
+
+ lang                   | text    |                       | extended |
+
+ coordinates            | text    |                       | extended |
+
+ place_coordinates      | text    |                       | extended |
+
+ place_country          | text    |                       | extended |
+
+ place_country_code     | text    |                       | extended |
+
+ place_full_name        | text    |                       | extended |
+
+ place_id               | text    |                       | extended |
+
+ place_name             | text    |                       | extended |
+
+ place_type             | text    |                       | extended |
+
+ entities_hashtags      | text    |                       | extended |
+
+ entities_urls          | text    |                       | extended |
+
+ entities_expanded_url  | text    |                       | extended |
+
+ entities_user_mentions | text    |                       | extended |
+
+ entities_symbols       | text    |                       | extended |
+
+ user_id                | text    |                       | extended |
+
+ user_name              | text    |                       | extended |
+
+ user_screen_name       | text    |                       | extended |
+
+ user_location          | text    |                       | extended |
+
+ user_url               | text    |                       | extended |
+
+ user_description       | text    |                       | extended |
+
+ user_time_zone         | text    |                       | extended |
+
+ user_lang              | text    |                       | extended |
+
+ geo                    | text    |                       | extended |
+
+ timestamp              | text    |                       | extended |
+
+ sys_time               | text    | default 'None'::text  | extended |
+
+ flag                   | text    | default 'False'::text | extended |
+
+Indexes:
+
+    "tweets_new_pkey" PRIMARY KEY, btree (tweet_id)
+
+Has OIDs: no
+
+ 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+                                             Table "public.tweets_new_sub"   (table that contains tweet_id and tweet_text from tweets_new, for parsing)
+
+   Column   |       Type        |                          Modifiers                          | Storage  | Description
+
+------------+-------------------+-------------------------------------------------------------+----------+-------------
+
+ tweet_id   | character varying |                                                             | extended |
+
+ tweet_text | character varying |                                                             | extended |
+
+ id         | integer           | not null default nextval('tweets_new_sub_id_seq'::regclass) | plain    |
+
+Has OIDs: no
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+                           Table "public.tweets_new_10"   (table that contains tweets data with specific filter condition)
+
+         Column         |  Type   |      Modifiers       | Storage  | Description
+
+------------------------+---------+----------------------+----------+-------------
+
+ created_at             | text    |                      | extended |
+
+ tweet_id               | text    | not null             | extended |
+
+ tweet_text             | text    |                      | extended |
+
+ source                 | text    |                      | extended |
+
+ quote_count            | integer |                      | plain    |
+
+ reply_count            | integer |                      | plain    |
+
+ retweet_count          | integer |                      | plain    |
+
+ favorite_count         | integer |                      | plain    |
+
+ lang                   | text    |                      | extended |
+
+ coordinates            | text    |                      | extended |
+
+ place_coordinates      | text    |                      | extended |
+
+ place_country          | text    |                      | extended |
+
+ place_country_code     | text    |                      | extended |
+
+ place_full_name        | text    |                      | extended |
+
+ place_id               | text    |                      | extended |
+
+ place_name             | text    |                      | extended |
+
+ place_type             | text    |                      | extended |
+
+ entities_hashtags      | text    |                      | extended |
+
+ entities_urls          | text    |                      | extended |
+
+ entities_expanded_url  | text    |                      | extended |
+
+ entities_user_mentions | text    |                      | extended |
+
+ entities_symbols       | text    |                      | extended |
+
+ user_id                | text    |                      | extended |
+
+ user_name              | text    |                      | extended |
+
+ user_screen_name       | text    |                      | extended |
+
+ user_location          | text    |                      | extended |
+
+ user_url               | text    |                      | extended |
+
+ user_description       | text    |                      | extended |
+
+ user_time_zone         | text    |                      | extended |
+
+ user_lang              | text    |                      | extended |
+
+ geo                    | text    |                      | extended |
+
+ timestamp              | text    |                      | extended |
+
+ sys_time               | text    | default 'None'::text | extended |
+
+Indexes:
+
+    "tweets_new_10_pkey" PRIMARY KEY, btree (tweet_id)
+
+Has OIDs: no
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+                                             Table "public.tweet_new_10_sub"  (table that contains tweet_id and tweet_text from tweets_new_10, for parsing)
+
+   Column   |       Type        |                           Modifiers                           | Storage  | Description
+
+------------+-------------------+---------------------------------------------------------------+----------+-------------
+
+ tweet_id   | character varying |                                                               | extended |
+
+ tweet_text | character varying |                                                               | extended |
+
+ id         | integer           | not null default nextval('tweet_new_10_sub_id_seq'::regclass) | plain    |
+
+Has OIDs: no
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+          Table "public.tweets_new_parse_two"  (table that contains parsing data for tweets_new table)
+
+   Column   | Type | Modifiers | Storage  | Description
+
+------------+------+-----------+----------+-------------
+
+ tweet_id   | text |           | extended |
+
+ tweet_text | text |           | extended |
+
+ song_name  | text |           | extended |
+
+ artist     | text |           | extended |
+
+ album      | text |           | extended |
+
+ channel    | text |           | extended |
+
+Has OIDs: no
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+                            Table "public.tweets_hash" (table that contains tweets data without specific filter condition) 
+
+         Column         |  Type   |      Modifiers       | Storage  | Description
+
+------------------------+---------+----------------------+----------+-------------
+
+ created_at             | text    |                      | extended |
+
+ tweet_id               | text    | not null             | extended |
+
+ tweet_text             | text    |                      | extended |
+
+ source                 | text    |                      | extended |
+
+ quote_count            | integer |                      | plain    |
+
+ reply_count            | integer |                      | plain    |
+
+ retweet_count          | integer |                      | plain    |
+
+ favorite_count         | integer |                      | plain    |
+
+ lang                   | text    |                      | extended |
+
+ coordinates            | text    |                      | extended |
+
+ place_coordinates      | text    |                      | extended |
+
+ place_country          | text    |                      | extended |
+
+ place_country_code     | text    |                      | extended |
+
+ place_full_name        | text    |                      | extended |
+
+ place_id               | text    |                      | extended |
+
+ place_name             | text    |                      | extended |
+
+ place_type             | text    |                      | extended |
+
+ entities_hashtags      | text    |                      | extended |
+
+ entities_urls          | text    |                      | extended |
+
+ entities_expanded_url  | text    |                      | extended |
+
+ entities_user_mentions | text    |                      | extended |
+
+ entities_symbols       | text    |                      | extended |
+
+ user_id                | text    |                      | extended |
+
+ user_name              | text    |                      | extended |
+
+ user_screen_name       | text    |                      | extended |
+
+ user_location          | text    |                      | extended |
+
+ user_url               | text    |                      | extended |
+
+ user_description       | text    |                      | extended |
+
+ user_time_zone         | text    |                      | extended |
+
+ user_lang              | text    |                      | extended |
+
+ geo                    | text    |                      | extended |
+
+ timestamp              | text    |                      | extended |
+
+ sys_time               | text    | default 'None'::text | extended |
+
+Indexes:
+
+    "tweets_hash_pkey" PRIMARY KEY, btree (tweet_id)
+
+Has OIDs: no
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+                                             Table "public.tweets_hash_sub" (table that contains tweet_id and tweet_text from tweets_hash, for parsing)
+
+   Column   |       Type        |                          Modifiers                           | Storage  | Description
+
+------------+-------------------+--------------------------------------------------------------+----------+-------------
+
+ tweet_id   | character varying |                                                              | extended |
+
+ tweet_text | character varying |                                                              | extended |
+
+ id         | integer           | not null default nextval('tweets_hash_sub_id_seq'::regclass) | plain    |
+
+Has OIDs: no
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+          Table "public.tweets_hash_parse_two"  (table that contains parsing data for tweets_hash table)
+
+   Column   | Type | Modifiers | Storage  | Description
+
+------------+------+-----------+----------+-------------
+
+ tweet_id   | text |           | extended |
+
+ tweet_text | text |           | extended |
+
+ song_name  | text |           | extended |
+
+ artist     | text |           | extended |
+
+ album      | text |           | extended |
+
+ channel    | text |           | extended |
+
+Has OIDs: no
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+                      Table "public.sentiment_new_all" (table that contains all sentiment data for tweets from tweets_new and tweets_new_10 table)
+
+       Column       |       Type       | Modifiers | Storage  | Description
+
+--------------------+------------------+-----------+----------+-------------
+
+ tweet_id           | text             |           | extended |
+
+ removed_tweet_text | text             |           | extended |
+
+ sentiment          | double precision |           | plain    |
+
+Has OIDs: no
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+                    Table "public.sentiment_new_removed"  (table that contains all sentiment data for tweets that have song name (removed) from tweets_new nad tweets_new_10 table)
+
+       Column       |       Type       | Modifiers | Storage  | Description
+
+--------------------+------------------+-----------+----------+-------------
+
+ tweet_id           | text             |           | extended |
+
+ removed_tweet_text | text             |           | extended |
+
+ sentiment          | double precision |           | plain    |
+
+Has OIDs: no
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+                     Table "public.sentiment_hash_all" (table that contains all sentiment data for tweets from tweets_hash table)
+
+       Column       |       Type       | Modifiers | Storage  | Description
+
+--------------------+------------------+-----------+----------+-------------
+
+ tweet_id           | text             |           | extended |
+
+ removed_tweet_text | text             |           | extended |
+
+ sentiment          | double precision |           | plain    |
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+                   Table "public.sentiment_hash_removed"  (table that contains all sentiment data for tweets that have song name (removed) from tweets_hash table)
+
+       Column       |       Type       | Modifiers | Storage  | Description
+
+--------------------+------------------+-----------+----------+-------------
+
+ tweet_id           | text             |           | extended |
+
+ removed_tweet_text | text             |           | extended |
+
+ sentiment          | double precision |           | plain    |

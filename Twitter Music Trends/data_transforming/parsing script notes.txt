@@ -1,0 +1,57 @@
+Diretory :
+
+
+
+/home/w205/final_project/data_source/test2
+
+
+
+Scripts in use:
+
+
+
+tweets_new_parse.py
+
+tweets_new_parse2.py
+
+tweets_new_parse3.py
+
+
+
+Function :
+
+
+
+tweets_new_parse.py : parsing tweets from tweet_new_10_sub
+
+tweets_new_parse2.py: parsing tweets from tweets_new_sub
+
+tweets_new_parse3.py: parsing tweets from tweets_hash_sub
+
+
+
+Parameter:
+
+
+
+change the id (30k to 50k) everytime in incremental fashion at:
+
+
+
+cur.execute("select distinct tweet_id, tweet_text from table where id >=    and id <=  ")
+
+
+
+Notes:
+
+
+
+Prior to running the scripts, you need to add serial id to the tweets table:
+
+
+
+"ALTER TABLE XX ADD COLUMN ID SERIAL"
+
+
+
+then you can start using id as a paramter for batch work

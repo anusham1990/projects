@@ -1,0 +1,3 @@
+0 8 * * 7  cd /home/w205/final_project/data_source/test2/billboard  python Billboard.py 
+0 8 * * 7  cd /home/w205/final_project/data_source/test2/billboard  python billboard_albums.py
+0 8 * * 7  cd /home/w205/final_project/data_source/test2/billboard  python billboard_artist.py
