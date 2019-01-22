@@ -1,2 +1,2 @@
 # Projects
-Repository for Projects 
+Repository for Projects done during UC Berkeley MIDS program.
